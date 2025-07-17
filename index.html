@@ -7,7 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to the AI poem generator</h1>
+    <header>
+    <h1>AI Poem Generator</h1>
+    </header>
+
+    <main>
+        <form>
+            <input type="text" placeholder="Enter a topic for your poem" id="topicInput" 
+            autofocus 
+            required
+            autocomplete="off"
+            />
+            <button type="submit">Generate Poem</button>
+        </form>
+        <div>
+            <p id="poemOutput">Your poem will appear here...</p>
+        </div>
+    </main>
+
     <footer>This was created by Frida Enoksen and <a href="https://github.com/enoksenco/AI-Poem-Generator" target="_blank">is open source on GitHub</a> and <a href="https://ai-poem-generator-enoksen.netlify.app/" target="_blank">hosted on Netlify</a></footer>
     <script src="src/index.js"></script>
 </body>
