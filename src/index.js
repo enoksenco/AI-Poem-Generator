@@ -12,9 +12,10 @@ function generatePoem(event) {
 
     let topicInputElement = document.querySelector("#topicInput");
     let poemElement = document.querySelector("#poem");
+    poemElement.classList.remove("hidden");
 
     // Vis "Generating poem..." før API-kall
-    poemElement.innerHTML = "Generating poem...";
+    poemElement.innerHTML = "<div class='blink'>⏳ Generating poem...";
 
     let apiKey = "4f3064df1bof6a9et5e31fd7aa251457";
     let prompt = "User instructions: Generate a poem about " + topicInputElement.value;
