@@ -1,7 +1,7 @@
-function generatePoemOutput(event) {
+function generatePoem(event) {
     event.preventDefault();
 
-new Typewriter('#poemOutput', {
+new Typewriter('#poem', {
   strings: ['Let the stars guide your way,', 
             'As you wander through the night,', 
             'In the silence, find your peace,', 
@@ -12,5 +12,5 @@ new Typewriter('#poemOutput', {
     });
 } 
 
-let topicInputElement = document.querySelector("#topicInput")
-topicInputElement.addEventListener("submit", generatePoemOutput);
+let poemFormElement = document.querySelector("#poem-form")
+poemFormElement.addEventListener("submit", generatePoem);
